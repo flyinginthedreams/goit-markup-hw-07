@@ -1,0 +1,141 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+  /* ----------Team section---------- */
+  .container-team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0 auto;
+  }
+
+  .team-item {
+    margin-bottom: 72px;
+  }
+  /* ----------/Team section---------- */
+
+  /* ----------Customers section---------- */
+
+  .customers-item {
+    display: flex;
+    justify-content: center;
+    width: calc((100% - 16px * 3) / 2);
+    padding-bottom: 72px;
+  }
+  .customers-list {
+    padding-bottom: 120px;
+  }
+  .container-customers {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ----------/Customers section---------- */
+
+  /* ----------Advantages sections---------- */
+  .icon-style {
+    display: none;
+  }
+  .qualities-text {
+    /* width: 396px; */
+  }
+  .qualities-name {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+  }
+  .conteiner-advantages {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ----------/Advantages sections---------- */
+
+  /* ----------Examples section----------*/
+  .examples-section {
+    display: none;
+  }
+  /* ----------/Examples section----------*/
+
+  /* ----------Footer section---------- */
+  .footer-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-logo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+
+  footer .social-link {
+    margin-bottom: 72px;
+  }
+
+  .footer-form-position {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-form .form-input {
+    width: 398px;
+    margin-right: 0;
+  }
+  /* ----------/Footer section---------- */
+
+  /* ----------/Hero section---------- */
+  .hero-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mobile.jpg);
+  }
+  /* ----------Header section---------- */
+  
+  .container-nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+  }
+  .mobile-menu .header-item{
+    margin-top: 40px;
+  }
+  .menu-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+}

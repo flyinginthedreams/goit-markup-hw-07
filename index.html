@@ -16,9 +16,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body class="body">
+    <!------------ Header ------------>
+
     <header class="header">
       <div class="container container-nav">
         <nav class="header-navigation">
@@ -36,6 +41,15 @@
               <a href="" class="link link-style">Contacts</a>
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-button" width="32" height="32">
+              <use href="./images/svg/symbol.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
         <address>
           <ul class="contacts-info list">
@@ -52,12 +66,82 @@
           </ul>
         </address>
       </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="close-button" width="8" height="8">
+            <use href="./images/svg/symbol.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu container">
+          <li class="header-item">
+            <a href="./index.html" class="link link-style">Studio</a>
+          </li>
+          <li class="header-item">
+            <a href="./portfolio.html" class="link link-style">Portfolio</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="link link-style active">Contacts</a>
+          </li>
+          <div class="mobile-menu-contacts">
+            <li class="link">
+              <a href="tel:+110001111111" class="header-contacts-phone link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="link">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-contacts-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </div>
+          <div class="footermedia">
+            <ul class="social-link list">
+              <li class="team-social list">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="24" height="24">
+                    <use href="./images/svg/symbol.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social list">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="24" height="24">
+                    <use href="./images/svg/symbol.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social list">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="24" height="24">
+                    <use href="./images/svg/symbol.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social list">
+                <a href="" class="team-social-link">
+                  <svg class="team-social-icon" width="24" height="24">
+                    <use href="./images/svg/symbol.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
     </header>
 
+    <!------------ /Header ------------>
+
     <main>
-      <!-- Hero section -->
+      <!------------ Hero section ------------>
+
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" data-modal-open class="hero-btn">
             Order Service
@@ -65,9 +149,10 @@
         </div>
       </section>
 
-      <!-- /Hero section -->
+      <!------------ /Hero section ------------>
 
-      <!-- Section 2-->
+      <!------------ Section 2 ------------>
+
       <section class="qualities">
         <div class="container conteiner-advantages">
           <h2 class="hidden">Advantages</h2>
@@ -125,9 +210,11 @@
           </ul>
         </div>
       </section>
-      <!-- /Section 2 -->
 
-      <!-- Section 3 -->
+      <!------------ /Section 2 ------------>
+
+      <!------------ Section 3 ------------>
+
       <section class="examples">
         <div class="container examples-section">
           <h2 class="examples-title">What are we doing</h2>
@@ -159,9 +246,11 @@
           </ul>
         </div>
       </section>
-      <!-- /Section 3 -->
 
-      <!-- Section 4-->
+      <!------------ /Section 3 ------------>
+
+      <!------------ Section 4 Ok ------------>
+
       <section class="team">
         <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
@@ -346,9 +435,9 @@
         </div>
       </section>
 
-      <!-- /Section 4 -->
+      <!------------/Section 4 ------------>
 
-      <!-- Section 5 -->
+      <!------------ Section 5 ------------>
 
       <section class="customers">
         <div class="container container-customers">
@@ -399,10 +488,12 @@
           </ul>
         </div>
       </section>
-      <!-- Section 5 -->
+
+      <!------------ Section 5 ------------>
     </main>
 
-    <!-- Footer section-->
+    <!------------ Footer section ------------>
+
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-item">
@@ -469,7 +560,11 @@
         </form>
       </div>
     </footer>
-    <!-- /Footer section-->
+
+    <!------------ /Footer section ------------>
+
+    <!------------ Backdrop section ------------>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -555,6 +650,9 @@
       </div>
     </div>
 
+    <!------------ /Backdrop section ------------>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

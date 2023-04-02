@@ -1,0 +1,87 @@
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1440px;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% / 4) - 18px);
+  }
+
+  /* ----------Customers section---------- */
+
+  .customers-item {
+    width: calc((100% - 20px * 5) / 7);
+  }
+  /* ----------/Customers section---------- */
+
+  /* ----------Advantages sections---------- */
+  .icon-style {
+    display: initial;
+  }
+  .qualities-items-list {
+    width: calc((100% - 24px * 3) / 4);
+    text-align: start;
+  }
+  .qualities-text {
+    max-width: 264px;
+  }
+  .qualities-name {
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 264px;
+    text-align: start;
+  }
+  /* ----------/Advantages sections---------- */
+
+  /* ----------Examples section----------*/
+  .examples-section {
+    display: initial;
+  }
+  /* ----------/Examples section----------*/
+
+  /* ----------Footer section---------- */
+
+  .footer-logo-item {
+    display: block;
+    margin-right: 120px;
+  }
+  .footermedia {
+    margin-right: 80px;
+  }
+
+  .footer-container {
+    gap: 0;
+  }
+  .footer-form-position {
+    align-items: start;
+  }
+
+  .footer-head {
+    text-align: left;
+  }
+  /* ----------/Footer section---------- */
+
+  /* ----------Hero section---------- */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.11;
+  }
+
+  .menu-container{
+    display: none;
+  }
+}

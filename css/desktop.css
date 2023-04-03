@@ -41,6 +41,8 @@
   /* ----------Examples section----------*/
   .examples-section {
     display: initial;
+    padding-left: auto;
+    padding-right: auto;
   }
   /* ----------/Examples section----------*/
 
@@ -76,12 +78,24 @@
       url(../images/people-office.jpg);
   }
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-x2.jpg);
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.11;
   }
 
-  .menu-container{
+  .menu-container {
     display: none;
   }
 }

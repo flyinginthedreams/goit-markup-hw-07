@@ -286,7 +286,7 @@ img {
   background-color: #f4f4fd;
 }
 
-.mobile-link{
+.mobile-link {
   padding-top: 284px;
 }
 
@@ -307,6 +307,7 @@ img {
   flex-direction: column;
   text-align: center;
   align-content: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -403,7 +404,7 @@ img {
   margin-bottom: 0;
   padding-bottom: 0;
   /* padding-top: 120px; */
-  /* padding-bottom: 120px; */
+  padding-bottom: 120px;
 }
 .examples-section {
   display: block;
@@ -536,7 +537,6 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
 }
 
 .customers-link {
@@ -545,7 +545,6 @@ img {
   justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 168px;
   height: 88px;
   transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -586,8 +585,6 @@ img {
   text-transform: uppercase;
   color: var(--logo-footer-colour);
   text-decoration: none;
-
-  margin-bottom: 16px;
 }
 
 .footer-head {
@@ -1020,3 +1017,458 @@ footer .team-social-link:is(:hover, :focus) {
 }
 
 /* ----------/Portfplio.html---------- */
+
+/* -------------------- Mobile-Wiew-section -------------------- */
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+  /* ----------Team section---------- */
+  .container-team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0 auto;
+  }
+
+  .team-item {
+    margin-bottom: 72px;
+  }
+
+  .team-item:last-child {
+    margin-bottom: 0;
+  }
+  /* ----------/Team section---------- */
+
+  /* ----------Customers section---------- */
+
+  .customers-item {
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    width: calc((100% - 12px * 3) / 2);
+  }
+
+  .customers-link {
+    width: 190px;
+  }
+  .customers-list {
+    padding-bottom: 120px;
+    gap: 72px 16px;
+  }
+  .container-customers {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ----------/Customers section---------- */
+
+  /* ----------Advantages sections---------- */
+  .icon-style {
+    display: none;
+  }
+  .qualities-text {
+    /* width: 396px; */
+  }
+  .qualities-name {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+  }
+  .conteiner-advantages {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qualities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+  .qualities-text {
+    font-weight: 500;
+  }
+  /* ----------/Advantages sections---------- */
+
+  /* ----------Examples section----------*/
+  .examples-section {
+    display: none;
+  }
+  /* ----------/Examples section----------*/
+
+  /* ----------Footer section---------- */
+  .footer-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-logo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+
+  footer .social-link {
+    margin-bottom: 72px;
+  }
+
+  .footer-form-position {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-form .form-input {
+    width: 398px;
+    margin-right: 0;
+  }
+  /* ----------/Footer section---------- */
+
+  /* ----------/Hero section---------- */
+  .hero-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mobile.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-mobile-x2.jpg);
+    }
+  }
+  /* ----------Header section---------- */
+
+  .container-nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+  }
+  .menu-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mobile-menu-list {
+    padding-top: 65px;
+  }
+}
+
+/* -------------------- /Mobile-Wiew-section -------------------- */
+
+/* -------------------- Tablet-Wiew-section -------------------- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .team {
+  }
+  .teamt-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px 24px;
+
+    flex-basis: calc((100% - 24px * 3) / 2);
+  }
+
+  .team-item {
+    margin-bottom: 0;
+  }
+
+  /* ----------Customers section---------- */
+  .customers {
+    margin-bottom: 0;
+  }
+
+  .customers-item {
+    width: calc((100% - 24px * 8) / 3);
+    padding: 0;
+  }
+  .customers-list {
+    gap: 72px 24px;
+    padding-bottom: 0;
+  }
+  .customers-link {
+    width: 168px;
+  }
+
+  /* ----------/Customers section---------- */
+
+  /* ----------Advantages sections---------- */
+
+  .conteiner-advantages {
+  }
+  .qualities {
+    padding-top: 96px;
+  }
+  .qualities-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .qualities-items-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .qualities-text {
+    font-weight: 500;
+  }
+  .qualities-items-list {
+    justify-content: initial;
+  }
+  /* ----------Advantages sections---------- */
+
+  /* ----------Footer section---------- */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    gap: 24px;
+  }
+  .footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-logo-item {
+    align-items: start;
+  }
+
+  .footer-logo {
+    margin-bottom: 16px;
+  }
+
+  .footer-form-position {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .footer-form .form-input {
+    width: 264px;
+  }
+  .footer {
+  }
+  /* ----------/Footer section---------- */
+  /* ----------/Hero section---------- */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tablet-x2.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.11;
+    width: 496px;
+  }
+  /* ----------Header section---------- */
+  .header-list,
+  .contacts-info {
+    display: initial;
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* -------------------- /Tablet-Wiew-section -------------------- */
+
+/* -------------------- Desktop-Wiew-section -------------------- */
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1440px;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% / 4) - 18px);
+  }
+
+  /* ----------Customers section---------- */
+
+  .customers-item {
+    width: calc((100% - 20px * 5) / 7);
+  }
+  /* ----------/Customers section---------- */
+
+  /* ----------Advantages sections---------- */
+  .icon-style {
+    display: initial;
+  }
+  .qualities-items-list {
+    width: 264px;
+    text-align: start;
+    justify-content: initial;
+  }
+
+  .qualities-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+  .qualities-text {
+    max-width: 264px;
+  }
+  .qualities-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 264px;
+    text-align: start;
+  }
+  .qualities-text {
+    font-weight: 400;
+  }
+
+  /* ----------/Advantages sections---------- */
+
+  /* ----------Examples section----------*/
+  .examples-section {
+    display: initial;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  /* ----------/Examples section----------*/
+
+  /* ----------Footer section---------- */
+
+  .footer-logo-item {
+    display: block;
+    margin-right: 120px;
+  }
+  .footermedia {
+    margin-right: 80px;
+  }
+
+  .footer-container {
+    gap: 0;
+  }
+  .footer-form-position {
+    align-items: start;
+  }
+
+  .footer-head {
+    text-align: left;
+  }
+  /* ----------/Footer section---------- */
+
+  /* ----------Hero section---------- */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-x2.jpg);
+    }
+  }
+
+  .hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.11;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  /* Header section */
+  .contacts-info {
+    display: flex;
+  }
+
+  .container-nav {
+    padding-left: 156px;
+    padding-right: 156px;
+    height: 70px;
+  }
+}
+
+/* -------------------- /Desktop-Wiew-section -------------------- */

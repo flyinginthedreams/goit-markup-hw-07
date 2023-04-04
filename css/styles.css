@@ -44,7 +44,7 @@ ul {
 }
 
 .container {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 .body {
@@ -353,8 +353,6 @@ img {
 /* ----------Advantages sections---------- */
 
 .qualities {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .conteiner-advantages {
@@ -524,8 +522,6 @@ img {
 
 /* ----------Customers section---------- */
 .customers {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 .container-customers {
   display: flex;
@@ -1025,12 +1021,18 @@ footer .team-social-link:is(:hover, :focus) {
     width: 428px;
   }
   /* ----------Team section---------- */
-  .container-team {
-    padding-top: 96px;
-    padding-bottom: 128px;
+  .container-team { 
     padding-left: 72px;
     padding-right: 72px;
     margin: 0 auto;
+  }
+
+  .team-title{
+    padding-top: 96px;
+  }
+
+  .teamt-list{
+    padding-bottom: 128px;
   }
 
   .team-item {
@@ -1045,17 +1047,15 @@ footer .team-social-link:is(:hover, :focus) {
   /* ----------Customers section---------- */
 
   .customers-item {
-    display: flex;
-    flex-grow: 0;
-    justify-content: center;
-    width: calc((100% - 12px * 3) / 2);
+    width: 190px;
+    /* width: calc((100% - 12px * 3) / 2); */
   }
 
   .customers-link {
     width: 190px;
   }
   .customers-list {
-    padding-bottom: 120px;
+    padding-bottom: 96px;
     gap: 72px 16px;
   }
   .container-customers {
@@ -1089,6 +1089,9 @@ footer .team-social-link:is(:hover, :focus) {
     display: flex;
     flex-direction: column;
     gap: 72px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .qualities-text {
     font-weight: 500;
@@ -1096,9 +1099,10 @@ footer .team-social-link:is(:hover, :focus) {
   /* ----------/Advantages sections---------- */
 
   /* ----------Examples section----------*/
-  .examples-section {
+  .examples {
     display: none;
   }
+  
   /* ----------/Examples section----------*/
 
   /* ----------Footer section---------- */
@@ -1223,12 +1227,14 @@ footer .team-social-link:is(:hover, :focus) {
   }
 
   .customers-item {
-    width: calc((100% - 24px * 8) / 3);
+    width: 168px;
+    /* width: calc((100% - 24px * 8) / 3); */
     padding: 0;
   }
   .customers-list {
+    padding-left: 93px;
+    padding-right: 93px;
     gap: 72px 24px;
-    padding-bottom: 0;
   }
   .customers-link {
     width: 168px;
@@ -1241,7 +1247,6 @@ footer .team-social-link:is(:hover, :focus) {
   .conteiner-advantages {
   }
   .qualities {
-    padding-top: 96px;
   }
   .qualities-list {
     display: flex;
@@ -1346,8 +1351,6 @@ footer .team-social-link:is(:hover, :focus) {
   }
 
   .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 
   .team-item {
@@ -1355,9 +1358,15 @@ footer .team-social-link:is(:hover, :focus) {
   }
 
   /* ----------Customers section---------- */
-
+.container-customers .team-title{
+  padding-top: 96px;
+}
+.customers-list{
+  padding-bottom: 120px;
+}
   .customers-item {
-    width: calc((100% - 20px * 5) / 7);
+    width: 168px;
+    /* width: calc((100% - 20px * 5) / 7); */
   }
   /* ----------/Customers section---------- */
 
@@ -1391,13 +1400,20 @@ footer .team-social-link:is(:hover, :focus) {
     font-weight: 400;
   }
 
+  .qualities{
+   padding:0 auto;
+  }
+
   /* ----------/Advantages sections---------- */
 
   /* ----------Examples section----------*/
   .examples-section {
-    display: initial;
+    display: block;
     padding-left: auto;
     padding-right: auto;
+  }
+  .examples {
+    display: initial;
   }
   /* ----------/Examples section----------*/
 

@@ -1018,6 +1018,8 @@ footer .team-social-link:is(:hover, :focus) {
 
 @media screen and (min-width: 480px) {
   .container {
+    padding: 0 15px;
+    margin: 0 auto;
     width: 428px;
   }
   /* ----------Team section---------- */
@@ -1032,6 +1034,7 @@ footer .team-social-link:is(:hover, :focus) {
 
   .team {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .teamt-list {
@@ -1044,6 +1047,7 @@ footer .team-social-link:is(:hover, :focus) {
   .team-item:last-child {
     margin-bottom: 0;
   }
+  
   /* ----------/Team section---------- */
 
   /* ----------Customers section---------- */
@@ -1076,6 +1080,7 @@ footer .team-social-link:is(:hover, :focus) {
   }
   .qualities {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
   .qualities-text {
     /* width: 396px; */
@@ -1127,7 +1132,7 @@ footer .team-social-link:is(:hover, :focus) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 
   footer .social-link {
@@ -1146,6 +1151,11 @@ footer .team-social-link:is(:hover, :focus) {
     width: 398px;
     margin-right: 0;
   }
+  .footer-logo {
+    margin-bottom: 16px;
+  }
+
+  footer
   /* ----------/Footer section---------- */
 
   /* ----------/Hero section---------- */
@@ -1215,6 +1225,7 @@ footer .team-social-link:is(:hover, :focus) {
   }
 
   .team {
+    padding-bottom: 96px;
   }
   .teamt-list {
     display: flex;
@@ -1224,7 +1235,6 @@ footer .team-social-link:is(:hover, :focus) {
     gap: 64px 24px;
 
     flex-basis: calc((100% - 24px * 3) / 2);
-    padding-bottom: 96px;
   }
 
   .team-item {
@@ -1242,8 +1252,8 @@ footer .team-social-link:is(:hover, :focus) {
     padding: 0;
   }
   .customers-list {
-    padding-left: 93px;
-    padding-right: 93px;
+    max-width: 552px;
+    margin: 0 auto;
     gap: 72px 24px;
   }
   .customers-link {
@@ -1363,7 +1373,8 @@ footer .team-social-link:is(:hover, :focus) {
   }
 
   .team {
-    padding-top: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .team-item {
@@ -1371,9 +1382,13 @@ footer .team-social-link:is(:hover, :focus) {
   }
 
   /* ----------Customers section---------- */
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
   .customers-list {
-    padding-bottom: 120px;
+    max-width: 1128px;
   }
   .customers-item {
     width: 168px;
@@ -1413,7 +1428,7 @@ footer .team-social-link:is(:hover, :focus) {
 
   .qualities {
     padding-top: 120px;
-    padding-bottom:120px;
+    padding-bottom: 120px;
   }
 
   /* ----------/Advantages sections---------- */
@@ -1425,15 +1440,22 @@ footer .team-social-link:is(:hover, :focus) {
     padding-right: auto;
   }
   .examples {
-    display: initial;
+    display: block;
   }
   /* ----------/Examples section----------*/
 
   /* ----------Footer section---------- */
 
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .footer-logo-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
     display: block;
-    padding-right: 120px;
+    margin-right: 120px;
   }
   .footermedia {
     margin-right: 80px;
@@ -1476,7 +1498,7 @@ footer .team-social-link:is(:hover, :focus) {
   .hero-container {
   }
 
-  .hero{
+  .hero {
     padding-top: 188px;
     padding-bottom: 188px;
   }
